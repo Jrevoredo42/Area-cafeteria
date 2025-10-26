@@ -1,0 +1,293 @@
+/* Estilos para os cards do cardápio */
+main {
+    background-image: url('../assets/fundos_de_imagem/uniao_de_planos_de_fundo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: calc(100vh - 222px); /* Altura total menos o header */
+    width: 100%;
+    position: relative;
+}
+
+/* Responsividade para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    main {
+        background-attachment: scroll; /* Melhor performance em mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-container {
+        padding-top: 20px; /* Menos padding em telas pequenas */
+    }
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 60px; /* Espaço adequado para o SVG de fundo */
+    position: relative;
+    z-index: 1;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+    backdrop-filter: blur(10px);
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #f5f5f5;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    flex: 1;
+}
+
+.card-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    text-align: right;
+}
+
+.card-price-symbol {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.tag-entradas {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.tag-pratos-principais {
+    background-color: #e8f5e8;
+    color: #2d5a2d;
+}
+
+.tag-sobremesas {
+    background-color: #fff0f5;
+    color: #8b4a6b;
+}
+
+.tag-bebidas {
+    background-color: #e6f3ff;
+    color: #1e5f99;
+}
+
+.tag-vegetariano {
+    background-color: #f0fff0;
+    color: #228b22;
+    border: 1px solid #90ee90;
+}
+
+.tag-peixe {
+    background-color: #e6f3ff;
+    color: #1e5f99;
+}
+
+.tag-carne {
+    background-color: #ffe6e6;
+    color: #cc0000;
+}
+
+.tag-frutos-mar {
+    background-color: #e6f7ff;
+    color: #1890ff;
+}
+
+.tag-italiana {
+    background-color: #fff8dc;
+    color: #daa520;
+}
+
+.tag-americana {
+    background-color: #f0f8ff;
+    color: #4169e1;
+}
+
+.tag-brasileira {
+    background-color: #fff5ee;
+    color: #ff6347;
+}
+
+.tag-natural {
+    background-color: #f0fff0;
+    color: #32cd32;
+}
+
+.tag-cafe {
+    background-color: #8b4513;
+    color: white;
+}
+
+.tag-agua {
+    background-color: #e6f3ff;
+    color: #1e5f99;
+}
+
+/* Loading state */
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+}
+
+.empty-state h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.empty-state p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* Estilos do Header do Cardápio */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 222px;
+    background: #155642;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 7px;
+}
+
+header ul li {
+    min-width: 84px;
+    height: 31.5px;
+    border-radius: 6.75px;
+    padding: 7px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+header ul li a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+header ul li:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-2px);
+}
+
+header ul li:hover a {
+    color: white;
+}

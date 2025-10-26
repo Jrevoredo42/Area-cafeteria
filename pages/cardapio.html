@@ -4,71 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/cardapio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Cardápio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        
-        header {
-            width: 1434px;
-            height: 222px;
-
-            background-color: white;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            margin: 0 auto;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        header ul {
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            gap: 7px;
-        }
-        
-        header ul li {
-            min-width: 84px;
-            height: 31.5px;
-            border-radius: 6.75px;
-            padding: 7px 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            border: 1px solid #e0e0e0;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        
-        header ul li a {
-            color: #333;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            white-space: nowrap;
-        }
-        
-        header ul li:hover {
-            background-color: black;
-        }
-        
-        header ul li:hover a {
-            color: white;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -80,7 +20,13 @@
             <li><a href="http://">Bebidas</a></li>
         </ul>
     </header> 
-    <main></main>
+    <main>
+        <div id="menu-container" class="menu-container">
+            <!-- Os cards do cardápio serão carregados aqui dinamicamente -->
+        </div>
+    </main>
     <footer></footer>
+    
+    <script src="../js/menu.js"></script>
 </body>
 </html>

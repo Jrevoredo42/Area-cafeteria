@@ -1,0 +1,170 @@
+{
+  "entradas": [
+    {
+      "id": 1,
+      "nome": "Bruschetta Tradicional",
+      "descricao": "Pão artesanal tostado com tomates frescos, manjericão e azeite extra virgem",
+      "preco": 18.90,
+      "imagem": "../../assets/cardapio/entradas/bruschetta.jpg",
+      "tags": ["Entradas", "Vegetariano"]
+    },
+    {
+      "id": 2,
+      "nome": "Carpaccio de Salmão",
+      "descricao": "Fatias finas de salmão fresco com rúcula, parmesão e molho de mostarda",
+      "preco": 32.50,
+      "imagem": "../assets/cardapio/entradas/carpaccio.jpg",
+      "tags": ["Entradas", "Peixe"]
+    },
+    {
+      "id": 3,
+      "nome": "Ceviche de Camarão",
+      "descricao": "Camarões marinados em limão com cebola roxa, coentro e batata doce",
+      "preco": 28.90,
+      "imagem": "../assets/cardapio/entradas/ceviche.jpg",
+      "tags": ["Entradas", "Frutos do Mar"]
+    },
+    {
+      "id": 4,
+      "nome": "Salada Caprese",
+      "descricao": "Tomate, mozzarella de búfala, manjericão fresco e azeite extra virgem",
+      "preco": 24.90,
+      "imagem": "../assets/cardapio/entradas/caprese.jpg",
+      "tags": ["Entradas", "Vegetariano"]
+    },
+    {
+      "id": 5,
+      "nome": "Tartar de Atum",
+      "descricao": "Atum fresco picado com abacate, gergelim e molho ponzu",
+      "preco": 35.90,
+      "imagem": "../assets/cardapio/entradas/tartar.jpg",
+      "tags": ["Entradas", "Peixe"]
+    }
+  ],
+  "pratos-principais": [
+    {
+      "id": 6,
+      "nome": "Risotto de Cogumelos",
+      "descricao": "Arroz arbóreo cremoso com mix de cogumelos frescos e parmesão",
+      "preco": 45.90,
+      "imagem": "../assets/cardapio/pratos-principais/risotto.jpg",
+      "tags": ["Pratos Principais", "Vegetariano"]
+    },
+    {
+      "id": 7,
+      "nome": "Salmão Grelhado",
+      "descricao": "Filé de salmão grelhado com legumes grelhados e molho de ervas",
+      "preco": 52.90,
+      "imagem": "../assets/cardapio/pratos-principais/salmao.jpg",
+      "tags": ["Pratos Principais", "Peixe"]
+    },
+    {
+      "id": 8,
+      "nome": "Picanha na Chapa",
+      "descricao": "Picanha grelhada na chapa com batatas rústicas e molho chimichurri",
+      "preco": 68.90,
+      "imagem": "../assets/cardapio/pratos-principais/picanha.jpg",
+      "tags": ["Pratos Principais", "Carne"]
+    },
+    {
+      "id": 9,
+      "nome": "Lasanha de Berinjela",
+      "descricao": "Lasanha vegetariana com berinjela, ricota e molho de tomate caseiro",
+      "preco": 42.90,
+      "imagem": "../assets/cardapio/pratos-principais/lasanha.jpg",
+      "tags": ["Pratos Principais", "Vegetariano"]
+    },
+    {
+      "id": 10,
+      "nome": "Frango Grelhado",
+      "descricao": "Peito de frango grelhado com arroz integral e legumes no vapor",
+      "preco": 38.90,
+      "imagem": "../assets/cardapio/pratos-principais/frango.jpg",
+      "tags": ["Pratos Principais", "Aves"]
+    }
+  ],
+  "sobremesas": [
+    {
+      "id": 11,
+      "nome": "Tiramisu Clássico",
+      "descricao": "Sobremesa italiana com café, mascarpone e cacau em pó",
+      "preco": 22.90,
+      "imagem": "../assets/cardapio/sobremesas/tiramisu.jpg",
+      "tags": ["Sobremesas", "Italiana"]
+    },
+    {
+      "id": 12,
+      "nome": "Cheesecake de Frutas Vermelhas",
+      "descricao": "Torta de queijo cremosa com calda de frutas vermelhas",
+      "preco": 24.90,
+      "imagem": "../assets/cardapio/sobremesas/cheesecake.jpg",
+      "tags": ["Sobremesas", "Americana"]
+    },
+    {
+      "id": 13,
+      "nome": "Pudim de Leite Condensado",
+      "descricao": "Pudim tradicional brasileiro com calda de caramelo",
+      "preco": 18.90,
+      "imagem": "../assets/cardapio/sobremesas/pudim.jpg",
+      "tags": ["Sobremesas", "Brasileira"]
+    },
+    {
+      "id": 14,
+      "nome": "Mousse de Chocolate",
+      "descricao": "Mousse cremosa de chocolate belga com raspas de chocolate",
+      "preco": 20.90,
+      "imagem": "../assets/cardapio/sobremesas/mousse.jpg",
+      "tags": ["Sobremesas", "Chocolate"]
+    },
+    {
+      "id": 15,
+      "nome": "Sorvete de Açaí",
+      "descricao": "Sorvete de açaí com granola e frutas tropicais",
+      "preco": 16.90,
+      "imagem": "../assets/cardapio/sobremesas/acai.jpg",
+      "tags": ["Sobremesas", "Tropical"]
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 16,
+      "nome": "Suco de Laranja Natural",
+      "descricao": "Suco fresco de laranja espremido na hora",
+      "preco": 12.90,
+      "imagem": "../assets/cardapio/bebidas/suco-laranja.jpg",
+      "tags": ["Bebidas", "Natural"]
+    },
+    {
+      "id": 17,
+      "nome": "Café Espresso",
+      "descricao": "Café espresso tradicional italiano",
+      "preco": 8.90,
+      "imagem": "../assets/cardapio/bebidas/espresso.jpg",
+      "tags": ["Bebidas", "Café"]
+    },
+    {
+      "id": 18,
+      "nome": "Água com Gás",
+      "descricao": "Água mineral com gás natural",
+      "preco": 6.90,
+      "imagem": "../assets/cardapio/bebidas/agua-gas.jpg",
+      "tags": ["Bebidas", "Água"]
+    },
+    {
+      "id": 19,
+      "nome": "Smoothie de Frutas",
+      "descricao": "Smoothie cremoso com banana, morango e iogurte natural",
+      "preco": 15.90,
+      "imagem": "../assets/cardapio/bebidas/smoothie.jpg",
+      "tags": ["Bebidas", "Natural"]
+    },
+    {
+      "id": 20,
+      "nome": "Chá de Ervas",
+      "descricao": "Chá de ervas frescas com gengibre e limão",
+      "preco": 10.90,
+      "imagem": "../assets/cardapio/bebidas/cha.jpg",
+      "tags": ["Bebidas", "Chá"]
+    }
+  ]
+}
