@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,28 @@
     <link rel="stylesheet" href="../css/cardapio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Cardápio</title>
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="http://">Todos</a></li>
-            <li><a href="http://">Entradas</a></li>
-            <li><a href="http://">Pratos Principais</a></li>
-            <li><a href="http://">Sobremesas</a></li>
-            <li><a href="http://">Bebidas</a></li>
+        <ul class="menu-filtros">
+            <li><a href="#" data-filter="todos">Todos</a></li>
+            <li><a href="#" data-filter="cappuccinos">Cappuccinos</a></li>
+            <li><a href="#" data-filter="espressos">Espressos</a></li>
+            <li><a href="#" data-filter="chocolate-quente">Chocolate Quente</a></li>
+            <li><a href="#" data-filter="bebidas-geladas">Bebidas Geladas</a></li>
+            <li><a href="#" data-filter="pratos-principais">Pratos Principais</a></li>
+            <li><a href="#" data-filter="sobremesas">Sobremesas</a></li>
         </ul>
     </header> 
+
     <main>
         <div id="menu-container" class="menu-container">
             <!-- Os cards do cardápio serão carregados aqui dinamicamente -->
         </div>
     </main>
+
     <footer></footer>
     
     <script src="../js/menu.js"></script>

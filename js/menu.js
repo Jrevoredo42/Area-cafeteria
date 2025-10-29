@@ -15,78 +15,16 @@ class MenuManager {
     async loadMenuData() {
         try {
             const response = await fetch('../data/menu.json');
-            
+
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`Erro HTTP: ${response.status}`);
             }
-            
+
             this.menuData = await response.json();
         } catch (error) {
             console.error('Erro ao carregar dados do cardápio:', error);
-            this.loadEmbeddedData();
+            this.showError('Não foi possível carregar o cardápio. Tente novamente mais tarde.');
         }
-    }
-
-    loadEmbeddedData() {
-        // Dados embutidos como fallback quando o fetch falha
-        this.menuData = {
-            "entradas": [
-                {
-                    "id": 1,
-                    "nome": "Bruschetta Tradicional",
-                    "descricao": "Pão artesanal tostado com tomates frescos, manjericão e azeite extra virgem",
-                    "preco": 18.90,
-                    "imagem": "../assets/cardapio/entradas/bruschetta.jpg",
-                    "tags": ["Entradas", "Vegetariano"]
-                },
-                {
-                    "id": 2,
-                    "nome": "Carpaccio de Salmão",
-                    "descricao": "Fatias finas de salmão fresco com rúcula, parmesão e molho de mostarda",
-                    "preco": 32.50,
-                    "imagem": "../assets/cardapio/entradas/carpaccio.jpg",
-                    "tags": ["Entradas", "Peixe"]
-                }
-            ],
-            "pratos-principais": [
-                {
-                    "id": 3,
-                    "nome": "Risotto de Cogumelos",
-                    "descricao": "Arroz arbóreo cremoso com mix de cogumelos frescos e parmesão",
-                    "preco": 45.90,
-                    "imagem": "../assets/cardapio/pratos-principais/risotto.jpg",
-                    "tags": ["Pratos Principais", "Vegetariano"]
-                },
-                {
-                    "id": 4,
-                    "nome": "Salmão Grelhado",
-                    "descricao": "Filé de salmão grelhado com legumes grelhados e molho de ervas",
-                    "preco": 52.90,
-                    "imagem": "../assets/cardapio/pratos-principais/salmao.jpg",
-                    "tags": ["Pratos Principais", "Peixe"]
-                }
-            ],
-            "sobremesas": [
-                {
-                    "id": 5,
-                    "nome": "Tiramisu Clássico",
-                    "descricao": "Sobremesa italiana com café, mascarpone e cacau em pó",
-                    "preco": 22.90,
-                    "imagem": "../assets/cardapio/sobremesas/tiramisu.jpg",
-                    "tags": ["Sobremesas", "Italiana"]
-                }
-            ],
-            "bebidas": [
-                {
-                    "id": 6,
-                    "nome": "Suco de Laranja Natural",
-                    "descricao": "Suco fresco de laranja espremido na hora",
-                    "preco": 12.90,
-                    "imagem": "../assets/cardapio/bebidas/suco-laranja.jpg",
-                    "tags": ["Bebidas", "Natural"]
-                }
-            ]
-        };
     }
 
     setupEventListeners() {
@@ -96,15 +34,14 @@ class MenuManager {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
                 
-                // Remove active class from all items
+                // Remove classe ativa de todos
                 menuItems.forEach(menuItem => {
                     menuItem.parentElement.classList.remove('active');
                 });
                 
-                // Add active class to clicked item
+                // Adiciona classe ativa ao item clicado
                 item.parentElement.classList.add('active');
                 
-                // Get category from text content
                 const category = this.getCategoryFromText(item.textContent.trim());
                 this.currentCategory = category;
                 this.renderMenu(category);
@@ -115,10 +52,12 @@ class MenuManager {
     getCategoryFromText(text) {
         const categoryMap = {
             'Todos': 'todos',
-            'Entradas': 'entradas',
+            'Cappuccinos': 'cappuccinos',
+            'Espressos': 'espressos',
+            'Chocolate Quente': 'chocolate-quente',
+            'Bebidas Geladas': 'bebidas-geladas',
             'Pratos Principais': 'pratos-principais',
-            'Sobremesas': 'sobremesas',
-            'Bebidas': 'bebidas'
+            'Sobremesas': 'sobremesas'
         };
         
         return categoryMap[text] || 'todos';
@@ -135,7 +74,6 @@ class MenuManager {
         let itemsToShow = [];
         
         if (category === 'todos') {
-            // Show all items from all categories
             Object.values(this.menuData).forEach(categoryItems => {
                 itemsToShow = itemsToShow.concat(categoryItems);
             });
@@ -189,23 +127,16 @@ class MenuManager {
 
     getTagClass(tagText) {
         const tagClassMap = {
-            'Entradas': 'tag-entradas',
             'Pratos Principais': 'tag-pratos-principais',
             'Sobremesas': 'tag-sobremesas',
             'Bebidas': 'tag-bebidas',
-            'Vegetariano': 'tag-vegetariano',
-            'Peixe': 'tag-peixe',
-            'Carne': 'tag-carne',
-            'Frutos do Mar': 'tag-frutos-mar',
-            'Italiana': 'tag-italiana',
-            'Americana': 'tag-americana',
-            'Brasileira': 'tag-brasileira',
-            'Natural': 'tag-natural',
-            'Café': 'tag-cafe',
-            'Água': 'tag-agua'
+            'Cappuccinos': 'tag-cappuccinos',
+            'Espressos': 'tag-espressos',
+            'Chocolate Quente': 'tag-chocolate',
+            'Bebidas Geladas': 'tag-bebidas-geladas'
         };
         
-        return tagClassMap[tagText] || 'tag-entradas';
+        return tagClassMap[tagText] || 'tag-default';
     }
 
     showError(message) {
@@ -224,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new MenuManager();
 });
 
-// Adicionar estilos para o estado ativo dos botões do menu
+// Estilo do botão ativo
 const style = document.createElement('style');
 style.textContent = `
     header ul li.active {

@@ -1,170 +1,182 @@
 {
-  "entradas": [
+  "cappuccinos": [
     {
-      "id": 1,
-      "nome": "Bruschetta Tradicional",
-      "descricao": "Pão artesanal tostado com tomates frescos, manjericão e azeite extra virgem",
-      "preco": 18.90,
-      "imagem": "../../assets/cardapio/entradas/bruschetta.jpg",
-      "tags": ["Entradas", "Vegetariano"]
+      "id": 6,
+      "nome": "Prestígio",
+      "descricao": "Chocolate trufado, coco e chantilly",
+      "preco": 24.00,
+      "imagem": "../assets/cardapio/bebidas/capuccino-prestigio.svg",
+      "tags": ["Cappuccinos", "Chocolate"]
     },
     {
-      "id": 2,
-      "nome": "Carpaccio de Salmão",
-      "descricao": "Fatias finas de salmão fresco com rúcula, parmesão e molho de mostarda",
-      "preco": 32.50,
-      "imagem": "../assets/cardapio/entradas/carpaccio.jpg",
-      "tags": ["Entradas", "Peixe"]
+      "id": 11,
+      "nome": "Diamante Negro",
+      "descricao": "Chocolate trufado, diamante negro em pedaços e chantilly",
+      "preco": 25.00,
+      "imagem": "../assets/cardapio/bebidas/capuccino-diamante-negro.svg",
+      "tags": ["Cappuccinos", "Chocolate"]
+    }
+  ],
+  "espressos": [
+    {
+      "id": 15,
+      "nome": "Nutella (30ml)",
+      "descricao": "Espresso com Nutella",
+      "preco": 13.00,
+      "imagem": "../assets/cardapio/bebidas/Expresso-de-nutella.svg",
+      "tags": ["Espressos", "Especial"]
     },
     {
-      "id": 3,
-      "nome": "Ceviche de Camarão",
-      "descricao": "Camarões marinados em limão com cebola roxa, coentro e batata doce",
-      "preco": 28.90,
-      "imagem": "../assets/cardapio/entradas/ceviche.jpg",
-      "tags": ["Entradas", "Frutos do Mar"]
+      "id": 18,
+      "nome": "Machiatto (30ml)",
+      "descricao": "Espresso com uma \"mancha\" de leite",
+      "preco": 12.00,
+      "imagem": "../assets/cardapio/bebidas/Expresso-machiatto.svg",
+      "tags": ["Espressos", "Clássico"]
+    }
+  ],
+  "chocolate-quente": [
+    {
+      "id": 24,
+      "nome": "Paçoca",
+      "descricao": "Chocolate quente com paçoca",
+      "preco": 22.00,
+      "imagem": "../assets/cardapio/bebidas/chocolate-quente-pacoca.svg",
+      "tags": ["Chocolate Quente", "Especial"]
+    }
+  ],
+  "bebidas-geladas": [
+    {
+      "id": 27,
+      "nome": "Jarra Primavera 1L",
+      "descricao": "Chá de frutas vermelhas, hortelã, morango, xarope, limão siciliano. Água com gás e muito gelo.",
+      "preco": 30.00,
+      "imagem": "../assets/cardapio/bebidas/Jarra-primavera.svg",
+      "tags": ["Bebidas Geladas", "Jarra"]
     },
     {
-      "id": 4,
-      "nome": "Salada Caprese",
-      "descricao": "Tomate, mozzarella de búfala, manjericão fresco e azeite extra virgem",
-      "preco": 24.90,
-      "imagem": "../assets/cardapio/entradas/caprese.jpg",
-      "tags": ["Entradas", "Vegetariano"]
+      "id": 28,
+      "nome": "Jarra Verão 1L",
+      "descricao": "Maracujá, hortelã, chá de cidreira, xarope simples, laranja bahia. Água com gás e muito gelo.",
+      "preco": 30.00,
+      "imagem": "../assets/cardapio/bebidas/Jarra-verao.svg",
+      "tags": ["Bebidas Geladas", "Jarra"]
     },
     {
-      "id": 5,
-      "nome": "Tartar de Atum",
-      "descricao": "Atum fresco picado com abacate, gergelim e molho ponzu",
-      "preco": 35.90,
-      "imagem": "../assets/cardapio/entradas/tartar.jpg",
-      "tags": ["Entradas", "Peixe"]
+      "id": 38,
+      "nome": "Laranja Mecânica",
+      "descricao": "Suco de laranja com Mel, Espresso, Gelo e um toque de água com gás",
+      "preco": 25.00,
+      "imagem": "../assets/cardapio/bebidas/Laranja-mecanica.svg",
+      "tags": ["Bebidas Geladas", "Especial"]
     }
   ],
   "pratos-principais": [
     {
-      "id": 6,
-      "nome": "Risotto de Cogumelos",
-      "descricao": "Arroz arbóreo cremoso com mix de cogumelos frescos e parmesão",
-      "preco": 45.90,
-      "imagem": "../assets/cardapio/pratos-principais/risotto.jpg",
-      "tags": ["Pratos Principais", "Vegetariano"]
+      "id": 70,
+      "nome": "Croissant Francês",
+      "descricao": "Croissant recheado com presunto, queijo e leve toque de manteiga",
+      "preco": 22.00,
+      "imagem": "../assets/cardapio/pratos-principais/Croitssant-frances.svg",
+      "tags": ["Pratos Principais", "Salgado"]
     },
     {
-      "id": 7,
-      "nome": "Salmão Grelhado",
-      "descricao": "Filé de salmão grelhado com legumes grelhados e molho de ervas",
-      "preco": 52.90,
-      "imagem": "../assets/cardapio/pratos-principais/salmao.jpg",
-      "tags": ["Pratos Principais", "Peixe"]
+      "id": 72,
+      "nome": "Escondidinho de Carne de Sol",
+      "descricao": "Purê de macaxeira com carne de sol desfiada e queijo coalho gratinado",
+      "preco": 28.00,
+      "imagem": "../assets/cardapio/pratos-principais/Escondidinho-carne-de-sol.svg",
+      "tags": ["Pratos Principais", "Regional"]
     },
     {
-      "id": 8,
-      "nome": "Picanha na Chapa",
-      "descricao": "Picanha grelhada na chapa com batatas rústicas e molho chimichurri",
-      "preco": 68.90,
-      "imagem": "../assets/cardapio/pratos-principais/picanha.jpg",
-      "tags": ["Pratos Principais", "Carne"]
+      "id": 54,
+      "nome": "Marguerita",
+      "descricao": "Mussarela, molho artesanal de tomates e manjericão",
+      "preco": 17.00,
+      "imagem": "../assets/cardapio/pratos-principais/tapioca-manjericao-h.svg",
+      "tags": ["Tapiocas", "Vegetariana"]
     },
     {
-      "id": 9,
-      "nome": "Lasanha de Berinjela",
-      "descricao": "Lasanha vegetariana com berinjela, ricota e molho de tomate caseiro",
-      "preco": 42.90,
-      "imagem": "../assets/cardapio/pratos-principais/lasanha.jpg",
-      "tags": ["Pratos Principais", "Vegetariano"]
-    },
-    {
-      "id": 10,
-      "nome": "Frango Grelhado",
-      "descricao": "Peito de frango grelhado com arroz integral e legumes no vapor",
-      "preco": 38.90,
-      "imagem": "../assets/cardapio/pratos-principais/frango.jpg",
-      "tags": ["Pratos Principais", "Aves"]
+      "id": 64,
+      "nome": "Tropicanay",
+      "descricao": "Pasta de amendoim, coco, banana, e mel de engenho",
+      "preco": 17.00,
+      "imagem": "../assets/cardapio/pratos-principais/tapioca-tropicana-h.svg",
+      "tags": ["Tapiocas", "Doce"]
     }
   ],
   "sobremesas": [
     {
-      "id": 11,
-      "nome": "Tiramisu Clássico",
-      "descricao": "Sobremesa italiana com café, mascarpone e cacau em pó",
-      "preco": 22.90,
-      "imagem": "../assets/cardapio/sobremesas/tiramisu.jpg",
-      "tags": ["Sobremesas", "Italiana"]
-    },
-    {
-      "id": 12,
-      "nome": "Cheesecake de Frutas Vermelhas",
-      "descricao": "Torta de queijo cremosa com calda de frutas vermelhas",
-      "preco": 24.90,
-      "imagem": "../assets/cardapio/sobremesas/cheesecake.jpg",
-      "tags": ["Sobremesas", "Americana"]
-    },
-    {
-      "id": 13,
-      "nome": "Pudim de Leite Condensado",
-      "descricao": "Pudim tradicional brasileiro com calda de caramelo",
-      "preco": 18.90,
-      "imagem": "../assets/cardapio/sobremesas/pudim.jpg",
-      "tags": ["Sobremesas", "Brasileira"]
-    },
-    {
-      "id": 14,
-      "nome": "Mousse de Chocolate",
-      "descricao": "Mousse cremosa de chocolate belga com raspas de chocolate",
-      "preco": 20.90,
-      "imagem": "../assets/cardapio/sobremesas/mousse.jpg",
+      "id": 44,
+      "nome": "Chocolatudo",
+      "descricao": "Massa amanteigada e bastante chocolate meio amargo",
+      "preco": 19.00,
+      "imagem": "../assets/cardapio/sobremesas/bolo-chocolatudo-h.svg",
       "tags": ["Sobremesas", "Chocolate"]
     },
     {
-      "id": 15,
-      "nome": "Sorvete de Açaí",
-      "descricao": "Sorvete de açaí com granola e frutas tropicais",
-      "preco": 16.90,
-      "imagem": "../assets/cardapio/sobremesas/acai.jpg",
-      "tags": ["Sobremesas", "Tropical"]
-    }
-  ],
-  "bebidas": [
-    {
-      "id": 16,
-      "nome": "Suco de Laranja Natural",
-      "descricao": "Suco fresco de laranja espremido na hora",
-      "preco": 12.90,
-      "imagem": "../assets/cardapio/bebidas/suco-laranja.jpg",
-      "tags": ["Bebidas", "Natural"]
+      "id": 45,
+      "nome": "Chocolatudo (Versão 1)",
+      "descricao": "Versão alternativa do bolo chocolatudo",
+      "preco": 19.00,
+      "imagem": "../assets/cardapio/sobremesas/bolo-chocolatudo-1-h.svg",
+      "tags": ["Sobremesas", "Chocolate"]
     },
     {
-      "id": 17,
-      "nome": "Café Espresso",
-      "descricao": "Café espresso tradicional italiano",
-      "preco": 8.90,
-      "imagem": "../assets/cardapio/bebidas/espresso.jpg",
-      "tags": ["Bebidas", "Café"]
+      "id": 46,
+      "nome": "Passione",
+      "descricao": "Massa amanteigada, doce de leite e geleia de maracujá",
+      "preco": 19.00,
+      "imagem": "../assets/cardapio/sobremesas/Bolo-passione-h.svg",
+      "tags": ["Sobremesas", "Doce de Leite"]
     },
     {
-      "id": 18,
-      "nome": "Água com Gás",
-      "descricao": "Água mineral com gás natural",
-      "preco": 6.90,
-      "imagem": "../assets/cardapio/bebidas/agua-gas.jpg",
-      "tags": ["Bebidas", "Água"]
+      "id": 47,
+      "nome": "Coco Du",
+      "descricao": "Bolo de coco bem molhadinho",
+      "preco": 15.00,
+      "imagem": "../assets/cardapio/sobremesas/bolo-de-coco-molhadinho-h.svg",
+      "tags": ["Sobremesas", "Coco"]
     },
     {
-      "id": 19,
-      "nome": "Smoothie de Frutas",
-      "descricao": "Smoothie cremoso com banana, morango e iogurte natural",
-      "preco": 15.90,
-      "imagem": "../assets/cardapio/bebidas/smoothie.jpg",
-      "tags": ["Bebidas", "Natural"]
+      "id": 48,
+      "nome": "Bolo de Cenoura",
+      "descricao": "Clássico bolo de cenoura com cobertura de chocolate",
+      "preco": 15.00,
+      "imagem": "../assets/cardapio/sobremesas/bolo-de-cenoura-h.svg",
+      "tags": ["Sobremesas", "Chocolate"]
     },
     {
-      "id": 20,
-      "nome": "Chá de Ervas",
-      "descricao": "Chá de ervas frescas com gengibre e limão",
-      "preco": 10.90,
-      "imagem": "../assets/cardapio/bebidas/cha.jpg",
-      "tags": ["Bebidas", "Chá"]
+      "id": 49,
+      "nome": "Brownie",
+      "descricao": "Brownie, sorvete de leite ninho e calda de chocolate quente.",
+      "preco": 22.00,
+      "imagem": "../assets/cardapio/sobremesas/Brownie.svg",
+      "tags": ["Sobremesas", "Chocolate"]
+    },
+    {
+      "id": 50,
+      "nome": "Cinamoonroll Tradicional",
+      "descricao": "Cinamoonroll clássico com açúcar e canela",
+      "preco": 14.00,
+      "imagem": "../assets/cardapio/sobremesas/Cinamoonroll-tradicional.svg",
+      "tags": ["Sobremesas", "Canela"]
+    },
+    {
+      "id": 51,
+      "nome": "Cinamoonroll Chocolate",
+      "descricao": "Cinamoonroll com calda de chocolate e recheio cremoso",
+      "preco": 15.00,
+      "imagem": "../assets/cardapio/sobremesas/Cinamoonroll-chocolate.svg",
+      "tags": ["Sobremesas", "Chocolate"]
+    },
+    {
+      "id": 52,
+      "nome": "Cinamoonroll Frutas Vermelhas",
+      "descricao": "Cinamoonroll com calda de frutas vermelhas e toque cítrico",
+      "preco": 15.00,
+      "imagem": "../assets/cardapio/sobremesas/Cinamoonroll-frutas-vermelhas.svg",
+      "tags": ["Sobremesas", "Frutas"]
     }
   ]
 }
