@@ -4,7 +4,6 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ["main"]
-
   workflow_dispatch:
 
 permissions:
@@ -30,15 +29,15 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # Copia home.html para index.html dentro da pasta /pages
-      - name: Copiar home.html como index.html
+      # Copia home.html para index.html dentro de /pages
+      - name: Set index.html from home.html
         run: |
           cp pages/home.html pages/index.html
 
+      # Faz o upload da pasta /pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Faz o deploy só da pasta pages
           path: 'pages'
 
       - name: Deploy to GitHub Pages
