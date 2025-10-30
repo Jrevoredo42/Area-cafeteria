@@ -11,7 +11,22 @@
     <title>Cardápio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="container">
+            <div>
+            <img src="../assets/icons/logo-area.svg" alt="Área Cafeteria Logo" class="logo">
+            </div>
+            <nav>
+            <a href="../pages/home.html" class="nav-link">Home</a>
+            <a href="../pages/sobre.html" class="nav-link">Sobre</a>
+            <a href="../pages/cardapio.html" class="nav-link">Menu</a>
+            <a href="../pages/contato.html" class="nav-link">Contato</a>
+            <a href="../pages/espaco.html" class="nav-link">O espaço</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
         <ul class="menu-filtros">
             <li><a href="#" data-filter="todos">Todos</a></li>
             <li><a href="#" data-filter="cappuccinos">Cappuccinos</a></li>
@@ -21,15 +36,39 @@
             <li><a href="#" data-filter="pratos-principais">Pratos Principais</a></li>
             <li><a href="#" data-filter="sobremesas">Sobremesas</a></li>
         </ul>
-    </header> 
-
-    <main>
         <div id="menu-container" class="menu-container">
             <!-- Os cards do cardápio serão carregados aqui dinamicamente -->
         </div>
     </main>
 
-    <footer></footer>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div>
+                    <img src="../assets/icons/logo-area.svg" class="footer-icon" alt="logo da area cafeteria">
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><a href="../pages/sobre.html">Sobre</a></h4>                    
+                </div>
+                <div class="footer-column">
+                    <h4><a href="../pages/contato.html">Contato</a></h4>
+                </div>
+                <div class="footer-column">
+                    <h4><a href="../pages/cardapio.html">Menu</a></h4>
+                </div>
+            </div>
+            <div class="footer-social">
+                <p>@ areacafeteria@gmail.com</p>
+                <p>+55 (87) 9999-9999</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Davi Ferreira, João Revoredo, Lucas Peixoto</p>
+        </div>
+    </footer>
     
     <script src="../js/menu.js"></script>
 </body>

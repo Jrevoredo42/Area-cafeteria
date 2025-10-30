@@ -28,7 +28,7 @@ class MenuManager {
     }
 
     setupEventListeners() {
-        const menuItems = document.querySelectorAll('header ul li a');
+        const menuItems = document.querySelectorAll('.menu-filtros li a');
         
         menuItems.forEach(item => {
             item.addEventListener('click', (e) => {
@@ -158,12 +158,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Estilo do botão ativo
 const style = document.createElement('style');
 style.textContent = `
-    header ul li.active {
+    .menu-filtros li.active {
         background-color: rgba(0, 0, 0, 0.8) !important;
         transform: translateY(-2px) !important;
     }
     
-    header ul li.active a {
+    .menu-filtros li.active a {
         color: white !important;
     }
 `;
