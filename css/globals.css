@@ -2,7 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-family: 'Poppins', serif;
+    
 }
 
+:root {
+    --color-dark: #2E2B2D;
+    --color-pink-1: #FDC8F1;
+    --color-pink-2: #FDB1EA;
+    --color-magenta: #B94193;
+    --color-pink-3: #FDDBF3;
+    --color-sand: #ECDBB1;
+    --color-amber: #EFBE4A;
+    --color-green-deep: #155642;
+    --color-blue-deep: #105BA1;
+    --color-blue-light: #7096B9;
+    --color-blue-gray: #2B3743;
+    --color-tan: #C89878;
+    --color-brown: #54372B;
+}
