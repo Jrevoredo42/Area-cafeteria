@@ -188,6 +188,86 @@ main {
     color: #1e5f99;
 }
 
+.tag-cappuccinos {
+    background-color: #8b4513;
+    color: white;
+}
+
+.tag-espressos {
+    background-color: #654321;
+    color: white;
+}
+
+.tag-chocolate-quente {
+    background-color: #8b4513;
+    color: white;
+}
+
+.tag-bebidas-geladas {
+    background-color: #e6f3ff;
+    color: #1e5f99;
+}
+
+.tag-chocolate {
+    background-color: #8b4513;
+    color: white;
+}
+
+.tag-especial {
+    background-color: #ff6b35;
+    color: white;
+}
+
+.tag-classico {
+    background-color: #6c757d;
+    color: white;
+}
+
+.tag-coco {
+    background-color: #f4e4bc;
+    color: #8b4513;
+}
+
+.tag-doce-de-leite {
+    background-color: #fff8dc;
+    color: #daa520;
+}
+
+.tag-doce {
+    background-color: #fff0f5;
+    color: #8b4a6b;
+}
+
+.tag-frutas {
+    background-color: #ffb6c1;
+    color: #8b2252;
+}
+
+.tag-jarra {
+    background-color: #e6f3ff;
+    color: #1e5f99;
+}
+
+.tag-regional {
+    background-color: #fff5ee;
+    color: #ff6347;
+}
+
+.tag-salgado {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.tag-tapiocas {
+    background-color: #f0fff0;
+    color: #228b22;
+}
+
+.tag-canela {
+    background-color: #daa520;
+    color: white;
+}
+
 /* Loading state */
 .loading {
     text-align: center;
@@ -213,7 +293,6 @@ main {
     100% { transform: rotate(360deg); }
 }
 
-/* Empty state */
 .empty-state {
     text-align: center;
     padding: 60px 20px;
